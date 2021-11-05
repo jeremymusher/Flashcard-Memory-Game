@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Flashcards</title>
+  </head>
+
+  <body>
+    <div class = "body">
+      <h1>Memory Game Trainer</h1>
+      <div class="timer"></div>
+      <button>Reshuffle Deck</button>
+      <div class="cards"></div>
+      <div class="scores">
+        <div class="score" id="correct">
+            <h2>Correct:<span id="numCorrect"></span></h2>
+        </div>
+        <div class="score" id="incorrect">
+            <h2>Incorrect:<span id="numIncorrect"></span></h2>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
