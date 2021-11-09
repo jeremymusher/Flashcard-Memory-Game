@@ -4,22 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css"/>
     <title>Flashcards</title>
   </head>
 
   <body>
-    <div class = "body">
+    <div class="body">
       <h1>Memory Game Trainer</h1>
       <div class="timer"></div>
       <button>Reshuffle Deck</button>
-      <div class="cards"></div>
+      <div class="cards">
+        <div id="card1" class="playingCard">
+          <img src="https://media.istockphoto.com/photos/bicycle-rider-back-playing-card-design-picture-id157772536?k=20&m=157772536&s=170667a&w=0&h=46bM0a2wuwcddiOzNOHTfS9PcUzjXwNTTCy33SrkC_0=" class="front" alt="Playing Card">
+          <img src="https://images.unsplash.com/photo-1570263849386-fafb59c56a1a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWZyaWNhbiUyMGVsZXBoYW50fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="back hidden" alt="Playing Card">
+        </div>
+        <div id="card2" class="playingCard">
+          <img src="https://media.istockphoto.com/photos/bicycle-rider-back-playing-card-design-picture-id157772536?k=20&m=157772536&s=170667a&w=0&h=46bM0a2wuwcddiOzNOHTfS9PcUzjXwNTTCy33SrkC_0=" class="front" alt="Playing Card">
+          <img src="https://images.unsplash.com/photo-1570263849386-fafb59c56a1a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWZyaWNhbiUyMGVsZXBoYW50fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="back hidden" alt="Playing Card">
+        </div>
+        <div id="card3" class= "playingCard">
+          <img src="https://media.istockphoto.com/photos/bicycle-rider-back-playing-card-design-picture-id157772536?k=20&m=157772536&s=170667a&w=0&h=46bM0a2wuwcddiOzNOHTfS9PcUzjXwNTTCy33SrkC_0=" class="front" alt="Playing Card">
+          <img src="https://images.unsplash.com/photo-1570263849386-fafb59c56a1a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWZyaWNhbiUyMGVsZXBoYW50fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="elephant back hidden" alt="Playing Card">
+        </div>
+        <div id="card4" class="playingCard">
+          <img src="https://media.istockphoto.com/photos/bicycle-rider-back-playing-card-design-picture-id157772536?k=20&m=157772536&s=170667a&w=0&h=46bM0a2wuwcddiOzNOHTfS9PcUzjXwNTTCy33SrkC_0=" class="front" alt="Playing Card">
+          <img src="https://images.unsplash.com/photo-1570263849386-fafb59c56a1a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWZyaWNhbiUyMGVsZXBoYW50fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="elephant back hidden" alt="Playing Card">
+        </div>
+      </div>
       <div class="scores">
         <div class="score" id="correct">
-            <h2>Correct:<span id="numCorrect"></span></h2>
+          <h2>Correct:<span id="numCorrect"></span></h2>
         </div>
         <div class="score" id="incorrect">
-            <h2>Incorrect:<span id="numIncorrect"></span></h2>
+          <h2>Incorrect:<span id="numIncorrect"></span></h2>
         </div>
       </div>
     </div>

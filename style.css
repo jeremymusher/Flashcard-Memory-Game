@@ -1,0 +1,21 @@
+.hidden{
+    display: none;
+}
+
+.cards {
+    display: grid;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-columns: 350px 350px 350px 350px 350px;
+}
+
+.playingCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+max-width: 100%;
+max-height: 100%;
+}
+
