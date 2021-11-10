@@ -1,21 +1,33 @@
 .hidden{
     display: none;
 }
-
-.cards {
-    display: grid;
-    grid-template-rows: 300px 300px 300px 300px;
-    grid-template-columns: 350px 350px 350px 350px 350px;
-}
-
-.playingCard{
-    display: flex;
+#reshuffle {
+    display: inline-block;
+    text-align: center;
     align-items: center;
+}
+.playingCard{
     justify-content: center;
+    align-items: center;
+}
+.body{
+    display: flex;
+    flex-wrap: wrap;
+}
+.playingCard img {
+    position: sticky;
+    height: 95%;
+    width: 95%;
 }
 
-img{
-max-width: 100%;
-max-height: 100%;
+.deck {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns:auto auto auto auto auto;
+    margin-top: 2%;
+    max-width: 80%;
+    margin-right: 2%;
+    border: dashed black 5px;
+    background-color: silver;
 }
 
