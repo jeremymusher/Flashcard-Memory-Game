@@ -1,33 +1,71 @@
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
+
+body {
+  justify-content: center;
+  background-color: olivedrab;
+}
+
 #reshuffle {
-    display: inline-block;
-    text-align: center;
-    align-items: center;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  margin: auto;
 }
-.playingCard{
-    justify-content: center;
-    align-items: center;
-}
-.body{
-    display: flex;
-    flex-wrap: wrap;
-}
-.playingCard img {
-    position: sticky;
-    height: 95%;
-    width: 95%;
+
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
 }
 
 .deck {
-    display: grid;
-    grid-auto-rows: auto;
-    grid-template-columns:auto auto auto auto auto;
-    margin-top: 2%;
-    max-width: 80%;
-    margin-right: 2%;
-    border: dashed black 5px;
-    background-color: silver;
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 1em;
+  column-gap: 1em;
+  margin: 2em auto;
+  padding: 0.5em;
+  width: 80vw;
+  border: solid black 5px;
+  border-radius: 2%;
+  background-color: silver;
 }
 
+.playingCard img {
+  justify-content: center;
+  align-items: center;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.title {
+  text-align: center;
+  display: inline-block;
+}
+#header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.score {
+  display: inline-block;
+  border: black;
+  align-self: center;
+  border-style: dotted;
+  border-radius: 10%;
+  width: 142.03px;
+  margin-top: 0.5em;
+}
+#attempts {
+  order: -1;
+}

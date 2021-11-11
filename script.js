@@ -10,6 +10,7 @@ const newDiv = document.createDocumentFragment();
 
 const shuffleButton = document.querySelector("#reshuffle")
 const correct = document.querySelector("#numCorrect")
+const numAttempts = document.querySelector("#numAttempts")
 
 let firstTurn = true;
 let card1Class = "";
@@ -20,6 +21,7 @@ let cardOneImg = null;
 let cardTwoImg = null;
 
 let pairsFound = 0;
+let attempts = 0;
 
 
 function position() {
@@ -34,8 +36,9 @@ function reshuffle() {
   }
   deck.appendChild(newDiv);
   pairsFound = 0;
-  correct.innerHTML=`${pairsFound}`
-
+  attempts = 0;
+  correct.innerText = `${pairsFound}`
+  numAttempts.innerText = `${attempts}`
 
 }
 
@@ -78,7 +81,9 @@ function checkPair(x, y) {
     if (x == y) {
       console.log("pair found");
       pairsFound += 1;
+      attempts += 1;
       correct.innerHTML=`${pairsFound}`
+      numAttempts.innerHTML=`${attempts}`
       applyEvent();
     } else {
       console.log("not a pair");
@@ -86,6 +91,8 @@ function checkPair(x, y) {
       frontofCard2.style.display = "block";
       cardOneImg.style.display = "none";
       cardTwoImg.style.display = "none";
+      attempts += 1;
+      numAttempts.innerHTML=`${attempts}`
       applyEvent();
     }
   }, 750);

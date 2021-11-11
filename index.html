@@ -10,9 +10,20 @@
 
   <body>
     <div class="body">
-      <h1>Memory Game Trainer</h1>
-      <div class="timer"></div>
+    <div id = "header">
+     <div class = "title">
+      <h1>Memory Trainer</h1>
       <button id = "reshuffle">Reshuffle Deck</button>
+     </div>
+        <div class="score" id="correct">
+          <h2>Pairs Found</h2>
+          <h2><span id="numCorrect"></span>/10</h2>
+        </div>
+        <div class="score" id="attempts">
+          <h2>Attempts</h2>
+          <h2 id="numAttempts"></h2>
+        </div>
+      </div>
       <div class="deck">
         <div id="card1" class="playingCard">
           <img src="https://media.istockphoto.com/photos/bicycle-rider-back-playing-card-design-picture-id157772536?k=20&m=157772536&s=170667a&w=0&h=46bM0a2wuwcddiOzNOHTfS9PcUzjXwNTTCy33SrkC_0=" class="front" alt="Playing Card">
@@ -93,14 +104,6 @@
         <div id="card20" class="playingCard">
           <img src="https://media.istockphoto.com/photos/bicycle-rider-back-playing-card-design-picture-id157772536?k=20&m=157772536&s=170667a&w=0&h=46bM0a2wuwcddiOzNOHTfS9PcUzjXwNTTCy33SrkC_0=" class="front" alt="Playing Card">
           <img src="https://cdn.britannica.com/61/157461-050-2BC37814/ostrich.jpg" class="ostrich back hidden" alt="Playing Card">
-        </div>
-      </div>
-      <div class="scores">
-        <div class="score" id="correct">
-          <h2>Pairs Found:<span id="numCorrect"></span></h2>
-        </div>
-        <div class="score" id="incorrect">
-          <h2>Incorrect:<span id="numIncorrect"></span></h2>
         </div>
       </div>
     </div>
