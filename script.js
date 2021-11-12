@@ -88,7 +88,6 @@ function checkPair(x, y) {
 
   setTimeout(function () {
     if (x == y) {
-      console.log("pair found");
       pairsFound += 1;
       attempts += 1;
       correct.innerHTML=`${pairsFound}`
@@ -98,7 +97,6 @@ function checkPair(x, y) {
           triggerWin();
       }
     } else {
-      console.log("not a pair");
       frontofCard1.style.display = "block";
       frontofCard2.style.display = "block";
       cardOneImg.style.display = "none";
