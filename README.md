@@ -27,7 +27,7 @@ No installation required.
 - As a memory game user, I want the game to have a reshuffle button, so that I can restart the game in a new random order without reloading the whole page.
 
 ### Initial Wire Frame
-![img](images/intial-wire-frame-project-1.png)
+![img](Images/intial-wire-frame-project-1.png)
 
 ### Major Hurdles
 - Getting the cards to randomize took a lot time and required researching on Google.
