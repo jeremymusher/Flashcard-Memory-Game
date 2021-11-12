@@ -6,14 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css"/>
     <title>Flashcards</title>
+    <style>
+      @media only screen and (max-width: 526px) {
+          #header{
+          flex-direction: column;
+          }
+          #attempts {
+            order: 1
+          }
+      }
+    </style>
   </head>
 
   <body>
-    <div class="body">
+    <div class = "body">
     <div id = "header">
      <div class = "title">
       <h1>Memory Trainer</h1>
-      <button id = "reshuffle">Reshuffle Deck</button>
+      <button class = "reshuffle">Reshuffle Deck</button>
      </div>
         <div class="score" id="correct">
           <h2>Pairs Found</h2>
@@ -23,7 +33,7 @@
           <h2>Attempts</h2>
           <h2 id="numAttempts"></h2>
         </div>
-      </div>
+    </div>
       <div class="deck">
         <div id="card1" class="playingCard">
           <img src="https://media.istockphoto.com/photos/bicycle-rider-back-playing-card-design-picture-id157772536?k=20&m=157772536&s=170667a&w=0&h=46bM0a2wuwcddiOzNOHTfS9PcUzjXwNTTCy33SrkC_0=" class="front" alt="Playing Card">
@@ -106,8 +116,13 @@
           <img src="https://cdn.britannica.com/61/157461-050-2BC37814/ostrich.jpg" class="ostrich back hidden" alt="Playing Card">
         </div>
       </div>
+      <div class = "win-screen">
+        <div class = "win-screen-contents">
+          <h4 class="win-text"></h4>
+          <button class = reshuffle id="play-again">Play Again</button>
+        </div>
     </div>
-
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

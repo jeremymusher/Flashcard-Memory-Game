@@ -8,9 +8,12 @@ const deck = document.querySelector(".deck");
 const cards = deck.children;
 const newDiv = document.createDocumentFragment();
 
-const shuffleButton = document.querySelector("#reshuffle")
+const shuffleButton = document.querySelector(".reshuffle")
+const playAgainButton = document.querySelector("#play-again")
 const correct = document.querySelector("#numCorrect")
 const numAttempts = document.querySelector("#numAttempts")
+const winText = document.querySelector(".win-text")
+const winScreen = document.querySelector(".win-screen")
 
 let firstTurn = true;
 let card1Class = "";
@@ -39,12 +42,14 @@ function reshuffle() {
   attempts = 0;
   correct.innerText = `${pairsFound}`
   numAttempts.innerText = `${attempts}`
-
+  winScreen.style.display = "none"
 }
 
 reshuffle();
 
+
 shuffleButton.addEventListener("click", reshuffle)
+playAgainButton.addEventListener("click", reshuffle)
 
 function applyEvent() {
   frontArr.forEach((element) => {
@@ -71,6 +76,10 @@ function flipCard(event) {
     firstTurn = true;
   }
 }
+function triggerWin(){
+    winText.innerText =`Congratulations! You Found All 10 Pairs Using Only ${attempts} Attempts. Try Again To See If You Can Do Better`
+    winScreen.style.display = "block"
+}
 
 function checkPair(x, y) {
   frontArr.forEach((element) => {
@@ -85,6 +94,9 @@ function checkPair(x, y) {
       correct.innerHTML=`${pairsFound}`
       numAttempts.innerHTML=`${attempts}`
       applyEvent();
+      if (pairsFound == 10){
+          triggerWin();
+      }
     } else {
       console.log("not a pair");
       frontofCard1.style.display = "block";
